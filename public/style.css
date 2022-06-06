@@ -1,0 +1,107 @@
+.center{
+    margin: auto;
+}
+.center a{
+    font-size: 20px;
+    text-decoration: none;
+}
+body{
+    background-image: url(/img/gh.jpg);
+    background-size: cover;
+}
+
+.menu a{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.logo img{
+    height: 100px;
+    margin-left: 20%;
+}
+.figure img{
+    margin-block-end: auto;
+}
+.c{
+    background-image: url(/img/1.jpg);
+    background-size: cover;
+}
+
+body ul li{
+    margin-left: 20%;
+   
+}
+.nav{
+    margin-left: auto;
+}
+.row{ 
+       background-image: url(/img/6.jpg);
+       background-size: cover;
+    } 
+.row img{
+    height: 70%;
+    margin-left: 20%;
+    margin-top: 10%;
+    filter: opacity(100%);
+}
+.card-body{
+    margin-top: 10%;
+}
+.container{
+    filter: opacity(70%);
+}
+h1{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+h1 img{
+    height: 80PX;
+    margin-left: auto;
+    margin-top: -40px;
+}
+h1 a{
+    font-size: 100px;
+    margin-right: -20px;
+}
+h1 a2{
+    font-size: 100px;
+    margin-right: -10PX;
+}
+h3{
+    color: aqua;
+    margin-left: 2%;
+}
+.ab svg{
+    background-image: url(/img/logo2.png);
+}
+.card a{
+    margin: auto;
+    margin-left: center;
+}
+.z{
+    background-image: url(/img/2.jpg);
+}
+.card-img-overlay{
+    text-align: center;
+}
+.footer span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.footer{
+    filter: opacity(70%);
+}
+.clearfix img{
+    width: 200px;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+.clearfix{
+    background-color: wheat;
+}
+.clearfix p{
+    font-size: 20px;
+    margin-left: 7%;
+}
