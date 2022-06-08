@@ -6,15 +6,33 @@ use PhpParser\Node\Stmt\Return_;
 
 class Home extends BaseController
 {
+
     public function index()
     {
-        return view('welcome_message');
+        return view('index');
     }
 
-    public function bale()
+    public function Konsultasi()
     {
-        return view('pages/coba');
+        return view('konsultasi/h_gejala');
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public function tanaman()
     {
@@ -35,10 +53,7 @@ class Home extends BaseController
     {
         return view('pages/h_tentang');
     }
-    public function Konsultasi()
-    {
-        return view('pages/h_gejala');
-    }
+
     public function hasil()
     {
         return view('pages/h_hasil');
