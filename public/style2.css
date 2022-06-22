@@ -2,6 +2,10 @@
     background-image: url(/img/gh.jpg);
     background-size: cover;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+
 .container{
     filter: opacity(80%);
 }
@@ -13,9 +17,9 @@ h1{
     color: aliceblue;
 }
 li{
-   font-weight: bold; 
+    
    font-size: 20px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-family: 'Roboto', sans-serif;
 }
 .navbar a{
     font-size: 26px;
@@ -38,4 +42,13 @@ p{
 }
 hr{
     color: aliceblue;
+}
+.table thead tr {
+    vertical-align: middle;
+}
+.table>tbody>tr>*{
+    vertical-align: middle;
+}
+.modal-header h5{
+    color: black;
 }

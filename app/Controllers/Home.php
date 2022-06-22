@@ -86,4 +86,16 @@ class Home extends BaseController
     // {
     //     return view('pages/coba');
     // }
+    public function tambahpenyakit()
+    {
+        return view('admin/Td_penyakit.php');
+    }
+    public function tambahgejala()
+    {
+        return view('admin/Td_gejala.php');
+    }
+    public function tambahaturan()
+    {
+        return view('admin/Td_aturan.php');
+    }
 }

@@ -7,6 +7,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="/style2.css">
+    <!-- <link rel="stylesheet" href="/css/dashboard.css"> -->
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <img src="/img/logo3.png" alt="" width="90%"><br>
-                            <a class="nav-link active" aria-current="page" href="/home/admin">
+                            <a class="nav-link active" aria-current="page" href="#">
                                 <span data-feather="home"></span>
                                 Dashboard
                             </a>
@@ -34,19 +35,19 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/home/gejala">
                                 <span data-feather="shopping-cart"></span>
                                 Data Gejala
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/home/aturan">
+                            <a class="nav-link" href="aturan">
                                 <span data-feather="users"></span>
                                 Data Aturan
                             </a>
                         </li><br><br><br>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="/home/coba">
                                 <span data-feather="users"></span>
                                 Keluar
                             </a>
@@ -56,33 +57,35 @@
             </nav>
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Tabel Gejala</h1>
+                    <h1 class="h2">Tambah Data</h1>
                 </div><br>
-                <a href="/home/tambahgejala" class="btn btn-primary">Tambah Data</a><br>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Id_Gejala</th>
-                            <th scope="col">Nama Gejala</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-
-                        </tr>
-                    </tbody>
-                </table>
+                <form method="post" action="">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">kode_penyakit</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Nama_Penyakit</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Keterangan</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Solusi</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div><br>
+                    <button type="submit" class="btn btn-primary">SIMPAN</button>
+                    <button type="reset" class="btn btn-warning">BATAL</button>
+                </form>
             </main>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
 </body>
 
 </html>
