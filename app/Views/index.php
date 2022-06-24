@@ -19,7 +19,7 @@
             <a href="/home/tanaman">Basis Pengetahuan</a>
             <a href="/home/bantuan">Bantuan</a>
             <a href="/home/tentang">Tentang</a>
-            <a href="/home/login">Login Admin</a>
+            <a href="/admin">Login Admin</a>
         </div>
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
@@ -51,7 +51,6 @@
                 <p>disini kami menyediakan informasi informasi yang anda butuhkan, dan anda dapat mengkonsultasikan
                     tentang penyakit apa yang sedang menyerang tanaman jagung anda
                 </p>
-                <a href="" class="btn">Baca Selengkapnya</a>
             </div>
         </div>
     </section><br><br><br>

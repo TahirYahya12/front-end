@@ -23,7 +23,7 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <img src="/img/logo3.png" alt="" width="90%"><br>
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="/home/admin">
                                 <span data-feather="home"></span>
                                 Dashboard
                             </a>
@@ -47,7 +47,7 @@
                             </a>
                         </li><br><br><br>
                         <li class="nav-item">
-                            <a class="nav-link" href="/home/coba">
+                            <a class="nav-link" href="/">
                                 <span data-feather="users"></span>
                                 Keluar
                             </a>

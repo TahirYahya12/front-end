@@ -33,64 +33,113 @@
             </div><br> -->
             <h3>Silahkan pilih gejaja penyakit</h3>
             <div class="list-group">
-                <label class="list-group-item">
+                <?php $i = 1; ?>
+                <?php foreach ($gejala as $g) : ?>
+                    <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        <?= $g['nama_gejala']; ?>
+                    </label>
+                <?php endforeach; ?>
+
+                <!-- <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    First checkbox
+                    Garis tertutup tepung putih
                 </label>
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    Second checkbox
+                    Daun berwarna kuning keputih-putihan
                 </label>
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    Third checkbox
+                    Daun kaku
                 </label>
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    Fourth checkbox
-                </label>
-                <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    Fifth checkbox
+                    Tanaman kerdil / Batang memendek
                 </label><label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    First checkbox
+                    Pembentukan tongkol terhambat
                 </label>
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    Second checkbox
+                    Tongkol kecil-kecil
                 </label>
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    Third checkbox
+                    Bercak-bercak bulat sampai lonjong
                 </label>
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    Fourth checkbox
+                    Bercak-bercak berwarna kuning pada daun
                 </label>
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    Fifth checkbox
-                </label><label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    First checkbox
+                    Tanaman berwarna cokelat muda hingga tua
                 </label>
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    Second checkbox
+                    Tanaman kebasahan
                 </label>
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    Third checkbox
+                    Bercak-bercak/noda-noda kecil berwarna merah karat
                 </label>
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    Fourth checkbox
+                    Terdapat tepung berwarna cokelat kekuning-kuningan / kuning kecokelatan
                 </label>
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" value="">
-                    Fifth checkbox
+                    Garis terputus-putusdiseluruh permukaan daun
                 </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Bercak berwarna kelabu/keputihan
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Bercak-bercak pada pelepah
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Bercak warna salmon
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Bercak meluas berwarna abu-abu atau putih
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Tanaman patah secara tiba-tiba
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Warna cokelat pada buku batang paling bawah
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Batang basah,Lunak,dan Bercincing
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Berbau busuk
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Ditengah-tengah bercak berwarna cokelat
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Biji terdapat jamur berwarna putih sampai cokelat kelabu
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Busuk berwarna merah jambu atau kemerahan sampe cokelat
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Pembentukan biji tidak sempurna
+                </label> -->
             </div><br>
             <a href="/home/hasil" class="btn btn-primary">Cek Hasil</a>
         </div>

@@ -58,8 +58,8 @@
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Tabel Aturan</h1>
                 </div><br>
-                <a href="/home/tambahaturan" class="btn btn-primary">Tambah Data</a><br>
-                <table class="table">
+                <a href="/home/tambahaturan" class="btn btn-primary">Tambah Data</a><br><br>
+                <table class="table table-bordered table-light">
                     <thead>
                         <tr>
                             <th scope="col">id_penyakit</th>
