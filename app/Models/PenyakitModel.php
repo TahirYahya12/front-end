@@ -13,15 +13,10 @@ class PenyakitModel extends Model
     // 
     public function getPenyakit()
     {
-        return $this->findAll();
+        return $this->findAll($id = false);
+        if ($id == false) {
+            return $this->findAll();
+        }
+        return $this->where(['id' => $id])->first();
     }
-
-    //
-    // public function getKomik($slug = false)
-    // {
-    //     if ($slug == false) {
-    //         return $this->findAll();
-    //     }
-    //     return $this->where(['slug' => $slug])->first();
-    // }
 }

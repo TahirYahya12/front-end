@@ -5,11 +5,11 @@
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Tabel Gejala</h1>
     </div><br>
-    <a href="/admin/tambahgejala" class="btn btn-primary">Tambah Data</a><br><br>
+    <a href="/gejala/tambah" class="btn btn-primary">Tambah Data</a><br><br>
     <table class="table table-bordered table-light">
         <thead>
             <tr>
-                <th scope="col">Id_Gejala</th>
+                <th scope="col">No</th>
                 <th scope="col">Nama Gejala</th>
                 <th scope="col">Aksi</th>
             </tr>
@@ -20,7 +20,7 @@
                 <tr>
                     <th scope="row"><?= $i++; ?></th>
                     <td><?= $g['nama_gejala']; ?></td>
-                    <td><a href="/admin/edit/<?= $g['id']; ?>" class="btn btn-success">Edit</a> <a href="/admin/delete/<?= $g['id']; ?>" class="btn btn-danger" onclick="return confirm('yakin ?');">Delete</a>
+                    <td><a href="/gejala/edit/<?= $g['id']; ?>" class="btn btn-success">Edit</a> <a href="/gejala/delete/<?= $g['id']; ?>" class="btn btn-danger" onclick="return confirm('yakin ?');">Delete</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

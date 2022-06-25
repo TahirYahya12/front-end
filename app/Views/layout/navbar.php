@@ -8,12 +8,12 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/admin/penyakit">
+                <a class="nav-link" href="/penyakit">
                     <span data-feather="file">Data Penyakit</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/admin/gejala">
+                <a class="nav-link" href="/gejala">
                     <span data-feather="shopping-cart">Data Gejala</span>
                 </a>
             </li>

@@ -32,7 +32,7 @@
             <h3>Pakar Jagung</h3>
             <p>Memberikan informasi tentang cara pengendalian hama dan penyakit pada tanaman jagung.
                 Dengan aplikasi PAKAR JAGUNG, anda dapat mendiagnosa hama dan penyakit tanaman jagung dengan mudah.</p>
-            <a href="/home/konsultasi" class="btn">Konsultasi</a>
+            <a href="/gejala" class="btn">Konsultasi</a>
         </div>
     </section><br>
 

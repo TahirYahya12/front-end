@@ -5,7 +5,8 @@
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Tambah Data</h1>
     </div><br>
-    <form method="post" action="/admin/savep">
+    <form method="post" action="/penyakit/save">
+        <input type="hidden" name="slug" value="<?= $penyakit['id']; ?>">
         <div class="form-group">
             <label for="namaPenyakit">Nama_Penyakit</label>
             <input type="text" class="form-control" id="namaPenyakit" name="namaPenyakit">
@@ -19,7 +20,7 @@
             <textarea class="form-control" id="solusi" name="solusi" rows="3"></textarea>
         </div><br>
         <button type="submit" class="btn btn-primary">SIMPAN</button>
-        <button type="reset" class="btn btn-warning">BATAL</button>
+        <a class="btn btn-primary" href="/admin/penyakit" role="button">KEMBALI</a>
     </form>
 </main>
 <?= $this->endSection(); ?>
