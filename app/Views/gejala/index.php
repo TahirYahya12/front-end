@@ -20,7 +20,7 @@
                 <tr>
                     <th scope="row"><?= $i++; ?></th>
                     <td><?= $g['nama_gejala']; ?></td>
-                    <td><a href="/gejala/edit/<?= $g['id']; ?>" class="btn btn-success">Edit</a> <a href="/gejala/delete/<?= $g['id']; ?>" class="btn btn-danger" onclick="return confirm('yakin ?');">Delete</a>
+                    <td><a href="/gejala/edit/<?= $g['id']; ?>" class="btn btn-warning">Edit</a> <a href="/gejala/delete/<?= $g['id']; ?>" class="btn btn-danger" onclick="return confirm('yakin ?');">Delete</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

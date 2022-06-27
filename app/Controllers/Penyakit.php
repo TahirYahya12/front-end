@@ -17,11 +17,11 @@ class Penyakit extends BaseController
             'id' => $this->penyakitModel->getPenyakit('id'),
             'penyakit' => $this->penyakitModel->getPenyakit()
         ];
-        return view('admin/d_penyakit.php', $data);
+        return view('penyakit/index', $data);
     }
-    public function tambahpenyakit()
+    public function tambah()
     {
-        return view('admin/Td_penyakit.php');
+        return view('penyakit/Td_penyakit.php');
     }
     public function save()
     {
@@ -41,17 +41,21 @@ class Penyakit extends BaseController
     }
     public function edit($id)
     {
+        // $data = $this->request->getVar($id);
         $data = [
             'penyakit' => $this->penyakitModel->getPenyakit($id)
         ];
-        return view('admin/edit', $data);
+        // dd($data['penyakit']);
+        return view('penyakit/edit', $data);
     }
-    // public function update($id)
-    // {
-    //     $this->gejalaModel->save([
-    //         'id' => $id,
-    //         'nama_gejala' => $this->request->getVar('namaGejala')
-    //     ]);
-    //     return redirect()->to('/admin/gejala');
-    // }
+    public function update($id)
+    {
+        $this->penyakitModel->save([
+            'id' => $id,
+            'nama_penyakit' => $this->request->getVar('namaPenyakit'),
+            'keterangan' => $this->request->getVar('keterangan'),
+            'solusi' => $this->request->getVar('solusi')
+        ]);
+        return redirect()->to('/penyakit');
+    }
 }

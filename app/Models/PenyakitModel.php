@@ -11,9 +11,8 @@ class PenyakitModel extends Model
     protected $allowedFields = ['nama_penyakit', 'keterangan', 'solusi'];
 
     // 
-    public function getPenyakit()
+    public function getPenyakit($id = false)
     {
-        return $this->findAll($id = false);
         if ($id == false) {
             return $this->findAll();
         }

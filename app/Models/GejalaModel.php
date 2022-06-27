@@ -18,13 +18,4 @@ class GejalaModel extends Model
         }
         return $this->where(['id' => $id])->first();
     }
-
-    //
-    // public function getKomik($slug = false)
-    // {
-    //     if ($slug == false) {
-    //         return $this->findAll();
-    //     }
-    //     return $this->where(['slug' => $slug])->first();
-    // }
 }

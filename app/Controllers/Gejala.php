@@ -18,6 +18,13 @@ class Gejala extends BaseController
         ];
         return view('gejala/index', $data);
     }
+    public function konsule()
+    {
+        $data = [
+            'gejala' => $this->gejalaModel->getGejala()
+        ];
+        return view('gejala/h_gejala', $data);
+    }
     public function tambah()
     {
         return view('gejala/Td_gejala.php');
@@ -40,6 +47,7 @@ class Gejala extends BaseController
         $data = [
             'gejala' => $this->gejalaModel->getGejala($id)
         ];
+        // dd($data);
         return view('gejala/edit', $data);
     }
     public function update($id)
