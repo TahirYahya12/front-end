@@ -11,11 +11,15 @@ class PenyakitModel extends Model
     protected $allowedFields = ['nama_penyakit', 'keterangan', 'solusi', 'kode_penyakit'];
 
     // 
+    public function getHasilPenyakit($id = false)
+    {
+        return $this->where(['id' => $id])->first();
+    }
     public function getPenyakit($id = false)
     {
         if ($id == false) {
             return $this->findAll();
         }
-        return $this->where(['id' => $id])->first();
+        return $this->where(['kode_penyakit' => $id])->first();
     }
 }

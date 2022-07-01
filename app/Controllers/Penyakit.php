@@ -42,7 +42,7 @@ class Penyakit extends BaseController
     {
         // $data = $this->request->getVar($id);
         $data = [
-            'penyakit' => $this->penyakitModel->getPenyakit($id)
+            'penyakit' => $this->penyakitModel->getHasilPenyakit($id)
         ];
         // dd($data['penyakit']);
         return view('penyakit/edit', $data);
