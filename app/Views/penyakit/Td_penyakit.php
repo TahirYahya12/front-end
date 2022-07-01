@@ -7,6 +7,10 @@
     </div><br>
     <form method="post" action="/penyakit/save">
         <div class="form-group">
+            <label for="kodePenyakit">Kode_Penyakit</label>
+            <input type="text" class="form-control" id="kodePenyakit" name="kodePenyakit" autocomplete="off" placeholder="P1-P7">
+        </div><br>
+        <div class="form-group">
             <label for="namaPenyakit">Nama_Penyakit</label>
             <input type="text" class="form-control" id="namaPenyakit" name="namaPenyakit" autocomplete="off">
         </div><br>

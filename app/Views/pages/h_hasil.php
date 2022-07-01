@@ -18,14 +18,16 @@
         <div class="nav nav-tabs">
             <a class="nav-link active" aria-current="true" href="/">Home</a>
             <a class="nav-link active" aria-current="true" href="/gejala/konsule">Konsultasi Lagi</a>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title"><?= $isi['nama_penyakit']; ?></h5>
-                <p class="card-text"><?= $isi['keterangan']; ?></p>
-                <p class="card-text"><?= $isi['solusi']; ?></p>
-            </div>
+        </div><br><br>
+        <div class=text-center>
+            <img src="/img/bulai.jfif" class="rounded" alt="..." width="20%"><br><br><br>
+            <h2 class="card-title"><?= $isi['nama_penyakit']; ?></h2>
+            <h4>Keterangan:</h4>
+            <h6 class="card-text"><?= $isi['keterangan']; ?></>
+            </h6>
+            <h2>Solusi:</h2>
+            <h6 class="card-text"><?= $isi['solusi']; ?></>
+            </h6>
         </div>
     </div>
 

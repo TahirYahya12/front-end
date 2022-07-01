@@ -25,9 +25,8 @@ class Penyakit extends BaseController
     }
     public function save()
     {
-        // $data = $this->request->getVar();
-        // dd($data);
         $this->penyakitModel->save([
+            'kode_penyakit' => $this->request->getVar('kodePenyakit'),
             'nama_penyakit' => $this->request->getVar('namaPenyakit'),
             'keterangan' => $this->request->getVar('keterangan'),
             'solusi' => $this->request->getVar('solusi')
@@ -52,6 +51,7 @@ class Penyakit extends BaseController
     {
         $this->penyakitModel->save([
             'id' => $id,
+            'kode_penyakit' => $this->request->getVar('kodePenyakit'),
             'nama_penyakit' => $this->request->getVar('namaPenyakit'),
             'keterangan' => $this->request->getVar('keterangan'),
             'solusi' => $this->request->getVar('solusi')

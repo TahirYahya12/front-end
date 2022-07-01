@@ -11,6 +11,7 @@
             <tr>
                 <th scope="col">No</th>
                 <th scope="col">Nama Penyakit</th>
+                <th scope="col">Gambar</th>
                 <th scope="col">Keterangan</th>
                 <th scope="col">Solusi</th>
                 <th scope="col">Aksi</th>
@@ -22,6 +23,7 @@
                 <tr>
                     <td><?= $i++; ?></td>
                     <td><?= $p['nama_penyakit']; ?></td>
+                    <td><?= $p['gambar']; ?></td>
                     <td><?= $p['keterangan']; ?></td>
                     <td><?= $p['solusi']; ?></td>
                     <td><a class="btn btn-warning brn-sm d-inline" href="/penyakit/edit/<?= $p['id']; ?>" role="button">Edit</a>&nbsp;<a class="btn btn-danger brn-sm d-inline" href="/penyakit/delete/<?= $p['id']; ?>" role="button" onclick="return confirm('yakin ?');">Delete</a></td>

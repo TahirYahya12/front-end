@@ -7,6 +7,10 @@
     </div><br>
     <form method="post" action="/gejala/update/<?= $gejala['id']; ?>">
         <div class="form-group mb-4">
+            <label for="kodeGejala">Kode_Gejala</label>
+            <input type="text" class="form-control" id="kodeGejala" name="kodeGejala" value="<?= $gejala['kode_gejala']; ?>" autocomplete="off">
+        </div>
+        <div class="form-group mb-4">
             <label for="namaGejala">Nama_Gejala</label>
             <input type="text" class="form-control" id="namaGejala" name="namaGejala" value="<?= $gejala['nama_gejala']; ?>" autocomplete="off">
         </div>

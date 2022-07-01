@@ -33,7 +33,8 @@ class Gejala extends BaseController
     {
         $this->gejalaModel->save([
             'id' => $this->request->getVar('id'),
-            'nama_gejala' => $this->request->getVar('namaGejala')
+            'nama_gejala' => $this->request->getVar('namaGejala'),
+            'kode_gejala' => $this->request->getVar('kodeGejala')
         ]);
         return redirect()->to('/gejala');
     }
@@ -54,6 +55,7 @@ class Gejala extends BaseController
     {
         $this->gejalaModel->save([
             'id' => $id,
+            'kode_gejala' => $this->request->getVar('kodeGejala'),
             'nama_gejala' => $this->request->getVar('namaGejala')
         ]);
         return redirect()->to('/gejala');

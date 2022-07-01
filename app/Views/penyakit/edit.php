@@ -7,6 +7,10 @@
     </div><br>
     <form method="post" action="/penyakit/update/<?= $penyakit['id']; ?>">
         <div class="form-group">
+            <label for="kodePenyakit">Kode_Penyakit</label>
+            <input type="text" class="form-control" id="kodePenyakit" name="kodePenyakit" value="<?= $penyakit['kode_penyakit']; ?>">
+        </div><br>
+        <div class="form-group">
             <label for="namaPenyakit">Nama_Penyakit</label>
             <input type="text" class="form-control" id="namaPenyakit" name="namaPenyakit" value="<?= $penyakit['nama_penyakit']; ?>">
         </div><br>

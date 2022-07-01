@@ -9,6 +9,8 @@
         <div class="form-group mb-4">
             <label for="namaGejala">Nama_Gejala</label>
             <input type="text" class="form-control" id="namaGejala" name="namaGejala" autocomplete="off" autofocus>
+            <label for="kodeGejala">Kode_Gejala</label>
+            <input type="text" class="form-control" id="kodeGejala" name="kodeGejala" autocomplete="off" autofocus>
         </div>
         <button type="submit" class="btn btn-primary">SIMPAN</button>
         <a class="btn btn-primary" href="/gejala" role="button">CENCLE</a>
