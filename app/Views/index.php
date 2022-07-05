@@ -16,9 +16,9 @@
             <img src="/img/logo3.png" alt="">
         </a>
         <div class="navbar">
-            <a href="/home/tanaman">Basis Pengetahuan</a>
+            <a href="/home/tanaman">Artikel</a>
             <a href="/home/bantuan">Bantuan</a>
-            <a href="/home/tentang">Tentang</a>
+            <!-- <a href="/home/tentang">Tentang</a> -->
             <a href="/admin">Login Admin</a>
         </div>
         <div class="icons">

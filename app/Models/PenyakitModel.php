@@ -8,7 +8,7 @@ class PenyakitModel extends Model
 {
     protected $table = 'penyakit'; //nama table DB
     protected $useTimestamps = true; //created_at and update_at
-    protected $allowedFields = ['nama_penyakit', 'keterangan', 'solusi', 'kode_penyakit'];
+    protected $allowedFields = ['nama_penyakit', 'gambar', 'keterangan', 'solusi', 'kode_penyakit'];
 
     // 
     public function getHasilPenyakit($id = false)

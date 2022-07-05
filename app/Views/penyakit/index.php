@@ -23,7 +23,7 @@
                 <tr>
                     <td><?= $i++; ?></td>
                     <td><?= $p['nama_penyakit']; ?></td>
-                    <td><?= $p['gambar']; ?></td>
+                    <td><img src="img/<?= $p['gambar']; ?>" class="sampul" width="100px"></td>
                     <td><?= $p['keterangan']; ?></td>
                     <td><?= $p['solusi']; ?></td>
                     <td><a class="btn btn-warning brn-sm d-inline" href="/penyakit/edit/<?= $p['id']; ?>" role="button">Edit</a>&nbsp;<a class="btn btn-danger brn-sm d-inline" href="/penyakit/delete/<?= $p['id']; ?>" role="button" onclick="return confirm('yakin ?');">Delete</a></td>

@@ -25,11 +25,18 @@ class Penyakit extends BaseController
     }
     public function save()
     {
+        // ambil gambar
+        $fileSampul = $this->request->getFile('gPenyakit');
+        // pindah file ke folder img
+        $fileSampul->move('img');
+        // ambil nama file sampul
+        $namaGambar = $fileSampul->getName();
         $this->penyakitModel->save([
             'kode_penyakit' => $this->request->getVar('kodePenyakit'),
             'nama_penyakit' => $this->request->getVar('namaPenyakit'),
             'keterangan' => $this->request->getVar('keterangan'),
-            'solusi' => $this->request->getVar('solusi')
+            'solusi' => $this->request->getVar('solusi'),
+            'gambar' => $namaGambar
         ]);
         return redirect()->to('/penyakit');
     }
@@ -49,12 +56,19 @@ class Penyakit extends BaseController
     }
     public function update($id)
     {
+        // // ambil gambar
+        // $fileSampul = $this->request->getFile('gPenyakit');
+        // // pindah file ke folder img
+        // $fileSampul->move('img');
+        // // ambil nama file sampul
+        // $namaGambar = $fileSampul->getName();
         $this->penyakitModel->save([
             'id' => $id,
             'kode_penyakit' => $this->request->getVar('kodePenyakit'),
             'nama_penyakit' => $this->request->getVar('namaPenyakit'),
             'keterangan' => $this->request->getVar('keterangan'),
-            'solusi' => $this->request->getVar('solusi')
+            'solusi' => $this->request->getVar('solusi'),
+            // 'gambar' => $namaGambar
         ]);
         return redirect()->to('/penyakit');
     }

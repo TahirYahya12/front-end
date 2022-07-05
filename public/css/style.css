@@ -1,3 +1,10 @@
+.sampul {
+    width: 70px;
+}
+
+.table > tbody > tr > * {
+    vertical-align: middle;
+}
 .center{
     margin: auto;
 }

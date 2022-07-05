@@ -16,14 +16,14 @@
 <body>
     <div class="container"><br><br><br><br><br><br><br>
         <header class="header">
-            <a href="/home/coba" class="logo">
+            <a href="/" class="logo">
                 <img src="/img/logo3.png" alt="">
             </a>
             <div class="navbar">
                 <a href="/">Home</a>
-                <a href="/home/tanaman">Basis Pengetahuan</a>
-                <a href="/home/konsultasi">Konsultasi</a>
-                <a href="/home/tentang">Tentang</a>
+                <a href="/home/tanaman">Artikel</a>
+                <a href="/gejala/konsule">Konsultasi</a>
+                <!-- <a href="/home/tentang">Tentang</a> -->
             </div>
             <div class="icons">
                 <div class="fas fa-bars" id="menu-btn"></div>

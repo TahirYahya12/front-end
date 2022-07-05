@@ -20,7 +20,7 @@
             <a class="nav-link active" aria-current="true" href="/gejala/konsule">Konsultasi Lagi</a>
         </div><br><br>
         <div class=text-center>
-            <img src="/img/bulai.jfif" class="rounded" alt="..." width="20%"><br><br><br>
+            <img src="/img/<?= $isi['gambar']; ?>" class="rounded" alt="..." width="20%"><br><br><br>
             <h2 class="card-title"><?= $isi['nama_penyakit']; ?></h2>
             <h4>Keterangan:</h4>
             <h6 class="card-text"><?= $isi['keterangan']; ?></>

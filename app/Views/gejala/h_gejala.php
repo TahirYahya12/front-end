@@ -19,9 +19,9 @@
             </a>
             <div class="navbar">
                 <a href="/">Home</a>
-                <a href="/home/tanaman">Basis Pengetahuan</a>
+                <a href="/home/tanaman">Artikel</a>
                 <a href="/home/bantuan">Bantuan</a>
-                <a href="/home/tentang">Tentang</a>
+                <!-- <a href="/home/tentang">Tentang</a> -->
             </div>
             <div class="icons">
                 <div class="fas fa-bars" id="menu-btn"></div>

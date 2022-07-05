@@ -20,13 +20,11 @@
         </div><br>
         <div class="form-group">
             <label for="solusi">Solusi</label>
-            <textarea class="form-control" id="solusi" name="solusi" rows="3" autocomplete="off"><pre></pre></textarea>
+            <textarea class="form-control" id="solusi" name="solusi" rows="3" autocomplete="off"></textarea>
         </div><br>
-        <form>
-            <div class="form-group">
-                <input type="file" class="form-control-file" id="gPenyakit" name="gPenyakit">
-            </div>
-        </form><br>
+        <div class="form-group">
+            <input type="file" class="form-control-file" id="gPenyakit" name="gPenyakit">
+        </div><br>
         <button type="submit" class="btn btn-primary">SIMPAN</button>
         <a class="btn btn-primary" href="/penyakit" role="button">KEMBALI</a>
     </form>
